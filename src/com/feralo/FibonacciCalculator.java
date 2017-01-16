@@ -17,7 +17,7 @@ public class FibonacciCalculator {
             System.out.print(fibonacci(i)+ " ");
     }
 
-    public static int fibonacci2(int number){
+    public static int fibonaci2(int number){
         // handle the 'base case'
         if(number == 1 || number == 2){
             return 1;

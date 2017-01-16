@@ -1,8 +1,5 @@
 package com.feralo;
 
-/**
- * Created by ncs on 1/14/17.
- */
 public class IntNode {
     // Invariant of the IntNode class:
     //    1. the node's Integer data is the instance variable data
