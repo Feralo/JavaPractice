@@ -14,10 +14,10 @@ public class FibonacciCalculator {
         System.out.println("First " + number +" members of the Fibonaci series:");
         // Print the series
         for(int i=1; i<=number; i++)
-            System.out.print(fibonaci2(i)+ " ");
+            System.out.print(fibonacci(i)+ " ");
     }
 
-    private static int fibonaci2(int number){
+    public static int fibonacci2(int number){
         // handle the 'base case'
         if(number == 1 || number == 2){
             return 1;
@@ -31,5 +31,13 @@ public class FibonacciCalculator {
            fibo2 = fibonacci;
         }
         return fibonacci;
+    }
+
+    public static int fibonacci(int number){
+        if(number == 1 || number ==2){
+            return 1;
+        }
+
+        return fibonacci(number -1) + fibonacci(number - 2);
     }
 }
